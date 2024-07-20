@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelDream</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- MAIN -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header__top">
+        <div class="logo">
+          <a href="#">Travel<span>Dream</span></a>
+        </div>
+        <div class="menu" id="menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#clients">Clients</a></li>
+      </ul>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner" id="home">
+      <div class="section">
+        <h1>TRAVELLER<br /><span>FOR LIFE.</span></h1>
+        <p>Live your best moments</p>
+        <form>
+          <div class="input__group">
+            <span>
+              <i class="fa fa-map"></i>
+            </span>
+            <input type="text" placeholder="Where are you going?" />
+          </div>
+          <div class="input__group">
+            <span>
+              <i class="fa fa-map-marker-alt"></i>
+            </span>
+            <input type="text" placeholder="Location" />
+          </div>
+          <div class="input__group">
+            <span>
+              <i class="fa fa-list-ol"></i>
+            </span>
+            <input type="text" placeholder="Tour type" />
+          </div>
+          <div class="input__group">
+            <button class="btn">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="feature section">
+      <div id="services">
+        <div class="feature__card">
+          <img src="./assets/feature-1.png" alt="feature1" />
+          <div class="feature__content">
+            <h4>Best Destinations</h4>
+            <p>Discover the most breathtaking places around the globe.</p>
+          </div>
+        </div>
+        <div class="feature__card">
+          <img src="./assets/feature-2.png" alt="feature2" />
+          <div class="feature__content">
+            <h4>Best Price Guaranteed</h4>
+            <p>Enjoy unbeatable prices on every trip you book.</p>
+          </div>
+        </div>
+        <div class="feature__card">
+          <img src="./assets/feature-3.png" alt="feature3" />
+          <div class="feature__content">
+            <h4>Instant Booking</h4>
+            <p>Secure your dream vacation with just a click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATION -->
+    <section class="destination section" id="destinations">
+      <div class="section__title">
+        <h2>Top Destinations</h2>
+        <p>Find out what are the best destinations in the world</p>
+      </div>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="./assets/destination-1.jpg" alt="destination1" />
+          <div class="destination__overlay">Bhutan</div>
+        </div>
+        <div class="destination__card">
+          <img src="./assets/destination-2.jpg" alt="destination2" />
+          <div class="destination__overlay">Japan</div>
+        </div>
+        <div class="destination__card">
+          <img src="./assets/destination-3.jpg" alt="destination3" />
+          <div class="destination__overlay">Nepal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOUNT -->
+    <section class="discount">
+      <div class="section">
+        <h2>
+          Get upto 60% discount <br /><span>by joining us before summer</span>
+        </h2>
+        <button class="btn">Join Us</button>
+      </div>
+    </section>
+
+    <!-- PACKAGE -->
+    <section class="package section">
+      <div class="section__title" id="packages">
+        <h2>Featured Packages</h2>
+        <p>We will help you find the trip that's perfect for you!</p>
+      </div>
+      <div class="package__grid">
+        <div class="package__card">
+          <img src="./assets/package-1.jpg" alt="package1" />
+          <div class="package__detail">
+            <h4>Thailand City Tour</h4>
+            <p>
+              Explore the vibrant culture and stunning landscapes of Thailand's
+              bustling cities.
+            </p>
+            <div class="package__bottom">
+              <button class="btn">Book Now</button>
+              <h3>$130</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="./assets/package-2.jpg" alt="package2" />
+          <div class="package__detail">
+            <h4>Laos City Tour</h4>
+            <p>
+              Immerse yourself in the rich culture and stunning landscapes of
+              Laos.
+            </p>
+            <div class="package__bottom">
+              <button class="btn">Book Now</button>
+              <h3>$150</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="./assets/package-3.jpg" alt="package3" />
+          <div class="package__detail">
+            <h4>Singapore City Tour</h4>
+            <p>
+              Experience the vibrant blend of culture, cuisine, and cutting-edge
+              architecture.
+            </p>
+            <div class="package__bottom">
+              <button class="btn">Book Now</button>
+              <h3>$110</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT -->
+    <section class="client section" id="clients">
+      <div class="section__title">
+        <h2>Client Reviews</h2>
+        <p>We have many happy customers who booked holidays with us</p>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-1.jpg" alt="client1" />
+              <span>
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p>
+                The instant booking feature is a game-changer. I secured my
+                dream vacation to Bali in minutes!
+              </p>
+              <h4>Michael Lee</h4>
+              <h5>Software Engineer</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-2.jpg" alt="client2" />
+              <span>
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p>
+                TravelDream made my vacation planning effortless and enjoyable.
+                Their best price guarantee really delivered!
+              </p>
+              <h4>Sarah Johnson</h4>
+              <h5>Marketing Manager</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-3.jpg" alt="client3" />
+              <span>
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p>
+                TravelDream offers an unbeatable combination of great prices and
+                top customer service. Highly recommended!
+              </p>
+              <h4>David Martinez</h4>
+              <h5>Financial Analyst</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-4.jpg" alt="client4" />
+              <span>
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p>
+                Booking with TravelDream was a breeze. Their user-friendly
+                interface and instant confirmation saved me so much time.
+              </p>
+              <h4>Olivia Brown</h4>
+              <h5>Event Planner</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-5.jpg" alt="client5" />
+              <span>
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p>
+                From booking to travel, every step was seamless. TravelDream
+                truly makes travel dreams come true!
+              </p>
+              <h4>James Wilson</h4>
+              <h5>Photographer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe">
+      <div class="section">
+        <h2>Subscribe to our newsletter for updates</h2>
+        <div class="subscribe__content">
+          <p>For the best recommendation of your. Please subscribe us.</p>
+          <form>
+            <input type="text" placeholder="Enter Your Email Here" />
+            <button class="btn">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="section">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#">Travel<span>Dream</span></a>
+          </div>
+          <p>
+            Explore the world's best destinations, enjoy unbeatable prices, and
+            book your perfect getaway instantly.
+          </p>
+          <h4>CONNECT WITH US</h4>
+          <ul class="footer__social">
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>DESTINATIONS</h4>
+          <ul class="footer__link">
+            <li><a href="#">China</a></li>
+            <li><a href="#">Venezuela</a></li>
+            <li><a href="#">Brazil</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">London</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR ACTIVITIES</h4>
+          <ul class="footer__link">
+            <li><a href="#">Trekking</a></li>
+            <li><a href="#">Peak Climbing</a></li>
+            <li><a href="#">Biking</a></li>
+            <li><a href="#">River Rafting</a></li>
+            <li><a href="#">Cultural Tour</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright &copy; 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- SCROLL_REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN -->
+    <script src="./index.js"></script>
+  </body>
+</html>
